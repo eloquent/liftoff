@@ -43,6 +43,8 @@ $launcher->launch('http://example.org/', array('--with', '--arguments'));
 
 [API documentation]: http://lqnt.co/liftoff/artifacts/documentation/api/
 [Build Status]: https://raw.github.com/eloquent/liftoff/gh-pages/artifacts/images/icecave/regular/build-status.png
+[Composer]: http://getcomposer.org/
+[eloquent/liftoff]: https://packagist.org/packages/eloquent/liftoff
 [Latest build]: http://travis-ci.org/eloquent/liftoff
 [Test coverage report]: http://lqnt.co/liftoff/artifacts/tests/coverage/
 [Test Coverage]: https://raw.github.com/eloquent/liftoff/gh-pages/artifacts/images/icecave/regular/coverage.png
