@@ -95,7 +95,7 @@ class LiftoffApplicationTest extends PHPUnit_Framework_TestCase
         );
 
         Phake::verify($this->isolator)->echo(
-            'Usage: liftoff <path> [argument...]' . PHP_EOL
+            'Usage: liftoff <target> [argument...]' . PHP_EOL
         );
     }
 
@@ -111,7 +111,7 @@ class LiftoffApplicationTest extends PHPUnit_Framework_TestCase
         );
 
         Phake::verify($this->isolator)->echo(
-            'Usage: liftoff <path> [argument...]' . PHP_EOL
+            'Usage: liftoff <target> [argument...]' . PHP_EOL
         );
     }
 

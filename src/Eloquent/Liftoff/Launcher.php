@@ -29,16 +29,16 @@ class Launcher implements LauncherInterface
     }
 
     /**
-     * Launch a file in its default GUI application.
+     * Launch a file or URI in its default GUI application.
      *
-     * @param string             $path      The path of the file to launch.
+     * @param string             $target    The path or URI to launch.
      * @param array<string>|null $arguments An array of arguments to pass to the
      *     associated application.
      *
      * @throws Exception\LaunchException If the launch command fails, or is
      *     unavailable.
      */
-    public function launch($path, array $arguments = null)
+    public function launch($target, array $arguments = null)
     {
         if (null === $arguments) {
             $arguments = array();
@@ -47,52 +47,52 @@ class Launcher implements LauncherInterface
         $os = $this->isolator->php_uname('s');
 
         if ('win' === strtolower(substr($os, 0, 3))) {
-            $this->launchWindows($path, $arguments);
+            $this->launchWindows($target, $arguments);
         } elseif ('Darwin' === $os) {
-            $this->launchOsx($path, $arguments);
+            $this->launchOsx($target, $arguments);
         } else {
-            $this->launchUnix($path, $arguments);
+            $this->launchUnix($target, $arguments);
         }
     }
 
     /**
-     * @param string        $path
+     * @param string        $target
      * @param array<string> $arguments
      *
      * @throws Exception\LaunchException
      */
-    protected function launchOsx($path, array $arguments)
+    protected function launchOsx($target, array $arguments)
     {
         if (count($arguments) > 0) {
             array_unshift($arguments, '--args');
         }
-        array_unshift($arguments, $path);
+        array_unshift($arguments, $target);
 
         $this->launchCommand('open', $arguments);
     }
 
     /**
-     * @param string        $path
+     * @param string        $target
      * @param array<string> $arguments
      *
      * @throws Exception\LaunchException
      */
-    protected function launchUnix($path, array $arguments)
+    protected function launchUnix($target, array $arguments)
     {
-        array_unshift($arguments, $path);
+        array_unshift($arguments, $target);
 
         $this->launchCommand('xdg-open', $arguments);
     }
 
     /**
-     * @param string        $path
+     * @param string        $target
      * @param array<string> $arguments
      *
      * @throws Exception\LaunchException
      */
-    protected function launchWindows($path, array $arguments)
+    protected function launchWindows($target, array $arguments)
     {
-        array_unshift($arguments, "liftoff", $path);
+        array_unshift($arguments, "liftoff", $target);
 
         $this->launchCommand('start', $arguments);
     }

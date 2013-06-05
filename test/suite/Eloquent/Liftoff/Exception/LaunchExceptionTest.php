@@ -25,7 +25,7 @@ class LauncherTest extends PHPUnit_Framework_TestCase
             "Unable to launch '/path/to/file'.",
             $exception->getMessage()
         );
-        $this->assertSame('/path/to/file', $exception->path());
+        $this->assertSame('/path/to/file', $exception->target());
         $this->assertSame(0, $exception->getCode());
         $this->assertSame($previous, $exception->getPrevious());
     }

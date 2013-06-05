@@ -95,7 +95,7 @@ class LiftoffApplication
 
     protected function executeUsage()
     {
-        $this->isolator->echo('Usage: liftoff <path> [argument...]' . PHP_EOL);
+        $this->isolator->echo('Usage: liftoff <target> [argument...]' . PHP_EOL);
     }
 
     protected function executeVersion()

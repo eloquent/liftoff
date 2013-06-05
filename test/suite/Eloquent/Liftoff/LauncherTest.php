@@ -27,7 +27,7 @@ class LauncherTest extends PHPUnit_Framework_TestCase
 
     public function launchData()
     {
-        //                                    os             path              arguments               expectedCommand
+        //                                    os             target            arguments               expectedCommand
         return array(
             'OSX'                    => array('Darwin',      '/path/to/file',  null,                   "open '/path/to/file'"),
             'OSX with arguments'     => array('Darwin',      '/path/to/file',  array('--foo', 'bar'),  "open '/path/to/file' '--args' '--foo' 'bar'"),
@@ -41,13 +41,13 @@ class LauncherTest extends PHPUnit_Framework_TestCase
     /**
      * @dataProvider launchData
      */
-    public function testLaunch($os, $path, $arguments, $expectedCommand)
+    public function testLaunch($os, $target, $arguments, $expectedCommand)
     {
         Phake::when($this->isolator)->php_uname('s')->thenReturn($os);
         Phake::when($this->isolator)
             ->proc_open(Phake::anyParameters())
             ->thenReturn(111);
-        $this->launcher->launch($path, $arguments);
+        $this->launcher->launch($target, $arguments);
 
         Phake::inOrder(
             Phake::verify($this->isolator)->proc_open($expectedCommand, array(), null),

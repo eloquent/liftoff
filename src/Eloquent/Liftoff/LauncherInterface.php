@@ -17,14 +17,14 @@ namespace Eloquent\Liftoff;
 interface LauncherInterface
 {
     /**
-     * Launch a file in its default GUI application.
+     * Launch a file or URI in its default GUI application.
      *
-     * @param string             $path      The path of the file to launch.
+     * @param string             $target    The path or URI to launch.
      * @param array<string>|null $arguments An array of arguments to pass to the
      *     associated application.
      *
      * @throws Exception\LaunchException If the launch command fails, or is
      *     unavailable.
      */
-    public function launch($path, array $arguments = null);
+    public function launch($target, array $arguments = null);
 }

@@ -22,29 +22,29 @@ final class LaunchException extends RuntimeException
     /**
      * Create a new LaunchException instance.
      *
-     * @param string         $path     The path that Liftoff attempted to launch.
+     * @param string         $target   The target that Liftoff attempted to launch.
      * @param Exception|null $previous The previous exception, if available.
      */
-    public function __construct($path, Exception $previous = null)
+    public function __construct($target, Exception $previous = null)
     {
-        $this->path = $path;
+        $this->target = $target;
 
         parent::__construct(
-            sprintf('Unable to launch %s.', var_export($path, true)),
+            sprintf('Unable to launch %s.', var_export($target, true)),
             0,
             $previous
         );
     }
 
     /**
-     * Get the path that Liftoff attempted to launch.
+     * Get the target that Liftoff attempted to launch.
      *
-     * @return string The path that Liftoff attempted to launch.
+     * @return string The target that Liftoff attempted to launch.
      */
-    public function path()
+    public function target()
     {
-        return $this->path;
+        return $this->target;
     }
 
-    private $path;
+    private $target;
 }
