@@ -1,0 +1,19 @@
+#!/usr/bin/env php
+<?php
+
+use Eloquent\Asplode\Asplode;
+use Eloquent\Liftoff\Console\LiftoffApplication;
+
+$packageRoot = dirname(__DIR__);
+
+$matches = array();
+if (preg_match('{^(.*)/vendor/.+/.+$}', $packageRoot, $matches)) {
+    require $matches[1] . '/vendor/autoload.php';
+} else {
+    require $packageRoot . '/vendor/autoload.php';
+}
+
+Asplode::instance()->install();
+
+$application = new LiftoffApplication;
+$application->execute();
