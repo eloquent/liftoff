@@ -66,8 +66,9 @@ class Launcher implements LauncherInterface
         if (count($arguments) > 0) {
             array_unshift($arguments, '--args');
         }
+        array_unshift($arguments, $path);
 
-        $this->launchWithCommand('open', $path, $arguments);
+        $this->launchCommand('open', $arguments);
     }
 
     /**
@@ -78,7 +79,9 @@ class Launcher implements LauncherInterface
      */
     protected function launchUnix($path, array $arguments)
     {
-        $this->launchWithCommand('xdg-open', $path, $arguments);
+        array_unshift($arguments, $path);
+
+        $this->launchCommand('xdg-open', $arguments);
     }
 
     /**
@@ -89,29 +92,30 @@ class Launcher implements LauncherInterface
      */
     protected function launchWindows($path, array $arguments)
     {
-        $this->launchWithCommand('start', $path, $arguments);
+        array_unshift($arguments, "liftoff", $path);
+
+        $this->launchCommand('start', $arguments);
     }
 
     /**
      * @param string        $command
-     * @param string        $path
      * @param array<string> $arguments
      *
      * @throws Exception\LaunchException
      */
-    protected function launchWithCommand($command, $path, array $arguments)
+    protected function launchCommand($command, array $arguments)
     {
         $command = implode(
             ' ',
             array_merge(
-                array($command, escapeshellarg($path)),
+                array($command),
                 array_map('escapeshellarg', $arguments)
             )
         );
 
         $handle = $this->isolator->proc_open($command, array(), $pipes);
         if (false === $handle) {
-            throw new Exception\LaunchException($path);
+            throw new Exception\LaunchException($arguments[0]);
         }
 
         $this->isolator->proc_close($handle);

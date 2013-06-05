@@ -31,8 +31,8 @@ class LauncherTest extends PHPUnit_Framework_TestCase
         return array(
             'OSX'                    => array('Darwin',      '/path/to/file',  null,                   "open '/path/to/file'"),
             'OSX with arguments'     => array('Darwin',      '/path/to/file',  array('--foo', 'bar'),  "open '/path/to/file' '--args' '--foo' 'bar'"),
-            'Windows'                => array('Windows NT',  '/path/to/file',  null,                   "start '/path/to/file'"),
-            'Windows with arguments' => array('Windows NT',  '/path/to/file',  array('--foo', 'bar'),  "start '/path/to/file' '--foo' 'bar'"),
+            'Windows'                => array('Windows NT',  '/path/to/file',  null,                   "start 'liftoff' '/path/to/file'"),
+            'Windows with arguments' => array('Windows NT',  '/path/to/file',  array('--foo', 'bar'),  "start 'liftoff' '/path/to/file' '--foo' 'bar'"),
             'Unix'                   => array('Linux',       '/path/to/file',  null,                   "xdg-open '/path/to/file'"),
             'Unix with arguments'    => array('Linux',       '/path/to/file',  array('--foo', 'bar'),  "xdg-open '/path/to/file' '--foo' 'bar'"),
         );
