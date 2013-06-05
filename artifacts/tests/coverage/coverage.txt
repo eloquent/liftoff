@@ -1,0 +1,16 @@
+
+
+Code Coverage Report 
+  2013-06-05 03:35:22
+
+ Summary: 
+  Classes: 100.00% (3/3)
+  Methods: 100.00% (15/15)
+  Lines:   100.00% (82/82)
+
+\Eloquent\Liftoff::Launcher
+  Methods: 100.00% ( 6/ 6)   Lines: 100.00% ( 37/ 37)
+\Eloquent\Liftoff\Console::LiftoffApplication
+  Methods: 100.00% ( 7/ 7)   Lines: 100.00% ( 38/ 38)
+\Eloquent\Liftoff\Exception::LaunchException
+  Methods: 100.00% ( 2/ 2)   Lines: 100.00% (  7/  7)

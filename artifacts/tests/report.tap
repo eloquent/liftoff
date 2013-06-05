@@ -1,0 +1,20 @@
+TAP version 13
+ok 1 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testConstructor
+ok 2 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testConstructorDefaults
+ok 3 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testExecute
+ok 4 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testExecuteWithDefaultVariables
+ok 5 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testExecuteUsageShort
+ok 6 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testExecuteUsageLong
+ok 7 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testVersionUsageShort
+ok 8 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testVersionUsageLong
+ok 9 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testExecuteFailureBadVariables
+ok 10 - Eloquent\Liftoff\Console\LiftoffApplicationTest::testExecuteFailureNoArguments
+ok 11 - Eloquent\Liftoff\Exception\LauncherTest::testException
+ok 12 - Eloquent\Liftoff\LauncherTest::testLaunch with data set "OSX" ('Darwin', '/path/to/file', NULL, 'open \'/path/to/file\'')
+ok 13 - Eloquent\Liftoff\LauncherTest::testLaunch with data set "OSX with arguments" ('Darwin', '/path/to/file', array('--foo', 'bar'), 'open \'/path/to/file\' \'--args\' \'--foo\' \'bar\'')
+ok 14 - Eloquent\Liftoff\LauncherTest::testLaunch with data set "Windows" ('Windows NT', '/path/to/file', NULL, 'start \'liftoff\' \'/path/to/file\'')
+ok 15 - Eloquent\Liftoff\LauncherTest::testLaunch with data set "Windows with arguments" ('Windows NT', '/path/to/file', array('--foo', 'bar'), 'start \'liftoff\' \'/path/to/file\' \'--foo\' \'bar\'')
+ok 16 - Eloquent\Liftoff\LauncherTest::testLaunch with data set "Unix" ('Linux', '/path/to/file', NULL, 'xdg-open \'/path/to/file\'')
+ok 17 - Eloquent\Liftoff\LauncherTest::testLaunch with data set "Unix with arguments" ('Linux', '/path/to/file', array('--foo', 'bar'), 'xdg-open \'/path/to/file\' \'--foo\' \'bar\'')
+ok 18 - Eloquent\Liftoff\LauncherTest::testLaunchFailure
+1..18
