@@ -43,14 +43,26 @@ class LauncherTest extends PHPUnit_Framework_TestCase
      */
     public function testLaunch($os, $target, $arguments, $expectedCommand)
     {
+        $expectedDescriptorSpec = array(
+            array('pipe', 'r'),
+            array('pipe', 'w'),
+            array('pipe', 'w'),
+        );
         Phake::when($this->isolator)->php_uname('s')->thenReturn($os);
         Phake::when($this->isolator)
-            ->proc_open(Phake::anyParameters())
+            ->proc_open($expectedCommand, $expectedDescriptorSpec, Phake::setReference(array(222, 333, 444)))
             ->thenReturn(111);
         $this->launcher->launch($target, $arguments);
 
         Phake::inOrder(
-            Phake::verify($this->isolator)->proc_open($expectedCommand, array(), null),
+            Phake::verify($this->isolator)->proc_open(
+                $expectedCommand,
+                $expectedDescriptorSpec,
+                null
+            ),
+            Phake::verify($this->isolator)->fclose(222),
+            Phake::verify($this->isolator)->fclose(333),
+            Phake::verify($this->isolator)->fclose(444),
             Phake::verify($this->isolator)->proc_close(111)
         );
     }

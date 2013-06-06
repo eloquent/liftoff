@@ -113,11 +113,22 @@ class Launcher implements LauncherInterface
             )
         );
 
-        $handle = $this->isolator->proc_open($command, array(), $pipes);
+        $handle = $this->isolator->proc_open(
+            $command,
+            array(
+                array('pipe', 'r'),
+                array('pipe', 'w'),
+                array('pipe', 'w'),
+            ),
+            $pipes
+        );
         if (false === $handle) {
             throw new Exception\LaunchException($arguments[0]);
         }
 
+        foreach ($pipes as $pipe) {
+            $this->isolator->fclose($pipe);
+        }
         $this->isolator->proc_close($handle);
     }
 
