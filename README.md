@@ -13,14 +13,14 @@
 
 ## What is Liftoff?
 
-**Liftoff** provides a simple interface to launch a file or URI in the host
-operating system's default application, in a cross-platform manner. **Liftoff**
+*Liftoff* provides a simple interface to launch a file or URI in the host
+operating system's default application, in a cross-platform manner. *Liftoff*
 can be used, for example, to launch a HTML page in the operating system's
 default browser from within a command line PHP application.
 
 ## Usage
 
-**Liftoff** can be used as a library, to launch files and URIs from within a PHP
+*Liftoff* can be used as a library, to launch files and URIs from within a PHP
 application:
 
 ```php
@@ -40,8 +40,8 @@ associated application.
 
 ## Command line interface
 
-**Liftoff** comes with a command line interface which can be used to launch
-files and URIs from the command line:
+*Liftoff* comes with a command line interface which can be used to launch files
+and URIs from the command line:
 
     liftoff /path/to/file.html
     liftoff /path/to/file.html --with --arguments
