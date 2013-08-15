@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testsuites>
-  <testsuite name="" tests="18" assertions="48" failures="0" errors="0" time="0.308433">
-    <testsuite name="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" namespace="Eloquent\Liftoff\Console" fullPackage="Eloquent.Liftoff.Console" tests="10" assertions="12" failures="0" errors="0" time="0.111804">
-      <testcase name="testConstructor" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="32" assertions="1" time="0.053634"/>
-      <testcase name="testConstructorDefaults" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="37" assertions="1" time="0.005694"/>
-      <testcase name="testExecute" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="47" assertions="1" time="0.007195"/>
-      <testcase name="testExecuteWithDefaultVariables" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="66" assertions="1" time="0.006997"/>
-      <testcase name="testExecuteUsageShort" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="86" assertions="1" time="0.006721"/>
-      <testcase name="testExecuteUsageLong" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="102" assertions="1" time="0.006678"/>
-      <testcase name="testVersionUsageShort" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="118" assertions="1" time="0.006645"/>
-      <testcase name="testVersionUsageLong" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="134" assertions="1" time="0.006720"/>
-      <testcase name="testExecuteFailureBadVariables" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="150" assertions="2" time="0.006424"/>
-      <testcase name="testExecuteFailureNoArguments" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="159" assertions="2" time="0.005096"/>
+  <testsuite name="" tests="18" assertions="48" failures="0" errors="0" time="0.490110">
+    <testsuite name="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" namespace="Eloquent\Liftoff\Console" fullPackage="Eloquent.Liftoff.Console" tests="10" assertions="12" failures="0" errors="0" time="0.167172">
+      <testcase name="testConstructor" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="32" assertions="1" time="0.076072"/>
+      <testcase name="testConstructorDefaults" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="37" assertions="1" time="0.009367"/>
+      <testcase name="testExecute" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="47" assertions="1" time="0.011196"/>
+      <testcase name="testExecuteWithDefaultVariables" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="66" assertions="1" time="0.011086"/>
+      <testcase name="testExecuteUsageShort" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="86" assertions="1" time="0.009714"/>
+      <testcase name="testExecuteUsageLong" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="102" assertions="1" time="0.010252"/>
+      <testcase name="testVersionUsageShort" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="118" assertions="1" time="0.009594"/>
+      <testcase name="testVersionUsageLong" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="134" assertions="1" time="0.009531"/>
+      <testcase name="testExecuteFailureBadVariables" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="150" assertions="2" time="0.012461"/>
+      <testcase name="testExecuteFailureNoArguments" class="Eloquent\Liftoff\Console\LiftoffApplicationTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Console/LiftoffApplicationTest.php" line="159" assertions="2" time="0.007900"/>
     </testsuite>
-    <testsuite name="Eloquent\Liftoff\Exception\LauncherTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Exception/LaunchExceptionTest.php" namespace="Eloquent\Liftoff\Exception" fullPackage="Eloquent.Liftoff.Exception" tests="1" assertions="4" failures="0" errors="0" time="0.003960">
-      <testcase name="testException" class="Eloquent\Liftoff\Exception\LauncherTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Exception/LaunchExceptionTest.php" line="19" assertions="4" time="0.003960"/>
+    <testsuite name="Eloquent\Liftoff\Exception\LauncherTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Exception/LaunchExceptionTest.php" namespace="Eloquent\Liftoff\Exception" fullPackage="Eloquent.Liftoff.Exception" tests="1" assertions="4" failures="0" errors="0" time="0.006515">
+      <testcase name="testException" class="Eloquent\Liftoff\Exception\LauncherTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/Exception/LaunchExceptionTest.php" line="19" assertions="4" time="0.006515"/>
     </testsuite>
-    <testsuite name="Eloquent\Liftoff\LauncherTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/LauncherTest.php" namespace="Eloquent\Liftoff" fullPackage="Eloquent.Liftoff" tests="7" assertions="32" failures="0" errors="0" time="0.192669">
-      <testsuite name="Eloquent\Liftoff\LauncherTest::testLaunch" tests="6" assertions="30" failures="0" errors="0" time="0.186472">
-        <testcase name="testLaunch with data set &quot;OSX&quot;" assertions="5" time="0.031884"/>
-        <testcase name="testLaunch with data set &quot;OSX with arguments&quot;" assertions="5" time="0.032202"/>
-        <testcase name="testLaunch with data set &quot;Windows&quot;" assertions="5" time="0.031637"/>
-        <testcase name="testLaunch with data set &quot;Windows with arguments&quot;" assertions="5" time="0.030757"/>
-        <testcase name="testLaunch with data set &quot;Unix&quot;" assertions="5" time="0.029963"/>
-        <testcase name="testLaunch with data set &quot;Unix with arguments&quot;" assertions="5" time="0.030029"/>
+    <testsuite name="Eloquent\Liftoff\LauncherTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/LauncherTest.php" namespace="Eloquent\Liftoff" fullPackage="Eloquent.Liftoff" tests="7" assertions="32" failures="0" errors="0" time="0.316423">
+      <testsuite name="Eloquent\Liftoff\LauncherTest::testLaunch" tests="6" assertions="30" failures="0" errors="0" time="0.307573">
+        <testcase name="testLaunch with data set &quot;OSX&quot;" assertions="5" time="0.050442"/>
+        <testcase name="testLaunch with data set &quot;OSX with arguments&quot;" assertions="5" time="0.050918"/>
+        <testcase name="testLaunch with data set &quot;Windows&quot;" assertions="5" time="0.051752"/>
+        <testcase name="testLaunch with data set &quot;Windows with arguments&quot;" assertions="5" time="0.051609"/>
+        <testcase name="testLaunch with data set &quot;Unix&quot;" assertions="5" time="0.052244"/>
+        <testcase name="testLaunch with data set &quot;Unix with arguments&quot;" assertions="5" time="0.050608"/>
       </testsuite>
-      <testcase name="testLaunchFailure" class="Eloquent\Liftoff\LauncherTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/LauncherTest.php" line="70" assertions="2" time="0.006197"/>
+      <testcase name="testLaunchFailure" class="Eloquent\Liftoff\LauncherTest" file="/home/travis/build/eloquent/liftoff/test/suite/Eloquent/Liftoff/LauncherTest.php" line="70" assertions="2" time="0.008850"/>
     </testsuite>
   </testsuite>
 </testsuites>
