@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "53cb48a6a4912b2fbdfb6995cbffd9fa",
+    "hash": "eea2fad3768fe98f572acf210e49d557",
     "packages": [
         {
             "name": "eloquent/asplode",
@@ -1065,7 +1065,7 @@
         "icecave/archer": 15
     },
     "platform": {
-        "php": ">=5.3.3"
+        "php": ">=5.3"
     },
     "platform-dev": [
 
