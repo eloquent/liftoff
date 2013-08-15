@@ -4,6 +4,7 @@
 
 [![Build Status]][Latest build]
 [![Test Coverage]][Test coverage report]
+[![Uses Semantic Versioning]][SemVer]
 
 ## Installation and documentation
 
@@ -55,10 +56,13 @@ application.
 <!-- References -->
 
 [API documentation]: http://lqnt.co/liftoff/artifacts/documentation/api/
-[Build Status]: https://raw.github.com/eloquent/liftoff/gh-pages/artifacts/images/icecave/regular/build-status.png
 [Composer]: http://getcomposer.org/
 [eloquent/liftoff]: https://packagist.org/packages/eloquent/liftoff
 [Executable phar]: http://lqnt.co/liftoff/liftoff
-[Latest build]: http://travis-ci.org/eloquent/liftoff
-[Test coverage report]: http://lqnt.co/liftoff/artifacts/tests/coverage/
-[Test Coverage]: https://raw.github.com/eloquent/liftoff/gh-pages/artifacts/images/icecave/regular/coverage.png
+
+[Build Status]: https://api.travis-ci.org/eloquent/liftoff.png?branch=master
+[Latest build]: https://travis-ci.org/eloquent/liftoff
+[SemVer]: http://semver.org/
+[Test coverage report]: https://coveralls.io/r/eloquent/liftoff
+[Test Coverage]: https://coveralls.io/repos/eloquent/liftoff/badge.png?branch=master
+[Uses Semantic Versioning]: http://b.repl.ca/v1/semver-yes-brightgreen.png

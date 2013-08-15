@@ -12,12 +12,12 @@
         }
     ],
     "require": {
-        "php": ">=5.3.3",
+        "php": ">=5.3",
         "eloquent/asplode": "~1",
         "icecave/isolator": "~2"
     },
     "require-dev": {
-        "icecave/archer": "~0.4"
+        "icecave/archer": "1.0.0-alpha.2"
     },
     "autoload": {
         "psr-0": {
