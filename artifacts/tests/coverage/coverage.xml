@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1376525005">
-  <project timestamp="1376525005">
+<coverage generated="1376525492">
+  <project timestamp="1376525492">
     <package name="Eloquent\Liftoff\Console">
       <file name="/home/travis/build/eloquent/liftoff/src/Eloquent/Liftoff/Console/LiftoffApplication.php">
         <class name="LiftoffApplication" namespace="Eloquent\Liftoff\Console">
