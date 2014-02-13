@@ -73,14 +73,14 @@ class LiftoffApplicationTest extends PHPUnit_Framework_TestCase
     {
         $this->application->execute(array('argv' => array('liftoff', '-v')));
 
-        Phake::verify($this->isolator)->echo('Liftoff 0.1.0' . PHP_EOL);
+        Phake::verify($this->isolator)->echo('Liftoff 0.1.1' . PHP_EOL);
     }
 
     public function testVersionUsageLong()
     {
         $this->application->execute(array('argv' => array('liftoff', '--version')));
 
-        Phake::verify($this->isolator)->echo('Liftoff 0.1.0' . PHP_EOL);
+        Phake::verify($this->isolator)->echo('Liftoff 0.1.1' . PHP_EOL);
     }
 
     public function testExecuteFailureBadVariables()
