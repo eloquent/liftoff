@@ -3,7 +3,7 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="robots" content="index, follow, all" />
-        <title>Eloquent\Liftoff\Exception\LaunchException | Liftoff API</title>
+        <title>Eloquent\Liftoff\Exception\LaunchException | eloquent/liftoff API</title>
                     <link rel="stylesheet" type="text/css" href="../../../stylesheet.css">
                             </head>
         <body id="class">
@@ -16,13 +16,13 @@
             
         </ul>
 
-        <div id="title">Liftoff API</div>
+        <div id="title">eloquent/liftoff API</div>
 
             <div class="type">Class</div>
     <h1><a href="../../../Eloquent/Liftoff/Exception.html">Eloquent\Liftoff\Exception</a>\LaunchException</h1>
     </div>
         <div class="content">
-                <p>class    <strong>LaunchException</strong>        extends <a href="http://php.net/RuntimeException"><abbr title="RuntimeException">RuntimeException</abbr></a></p>
+                <p>class    <strong>LaunchException</strong>        extends <a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></p>
 
             <div class="description">
             <p>Launch command failed, or is unavailable.</p>
@@ -40,7 +40,7 @@
                     
                 </td>
                 <td class="last">
-                    <a href="#method___construct">__construct</a>(string $target, <a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a> $previous = null)
+                    <a href="#method___construct">__construct</a>(string $target, <a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a> $cause = null)
                     <p>Create a new LaunchException instance.</p>
                 </td>
                 <td></td>
@@ -61,9 +61,9 @@
         <h2>Details</h2>
 
                         <h3 id="method___construct">
-        <div class="location">at line 28</div>
+        <div class="location">at line 27</div>
         <code>            public            
-    <strong>__construct</strong>(string $target, <a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a> $previous = null)</code>
+    <strong>__construct</strong>(string $target, <a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a> $cause = null)</code>
     </h3>
     <div class="details">
         <p>Create a new LaunchException instance.</p>
@@ -80,8 +80,8 @@
             </tr>
                     <tr>
                 <td><a href="http://php.net/Exception"><abbr title="Exception">Exception</abbr></a></td>
-                <td>$previous</td>
-                <td>The previous exception, if available.</td>
+                <td>$cause</td>
+                <td>The cause, if available.</td>
             </tr>
             </table>
 
@@ -92,7 +92,7 @@
     </div>
 
                 <h3 id="method_target">
-        <div class="location">at line 44</div>
+        <div class="location">at line 43</div>
         <code>            public            string
     <strong>target</strong>()</code>
     </h3>

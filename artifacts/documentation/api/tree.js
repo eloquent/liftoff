@@ -3,7 +3,7 @@ var tree = [["Eloquent",,"",
                 [["Console","Eloquent\/Liftoff\/Console.html","",
                 [["LiftoffApplication","Eloquent\/Liftoff\/Console\/LiftoffApplication.html","",
                 [        ]]        ]],["Exception","Eloquent\/Liftoff\/Exception.html","",
-                [["LaunchException","Eloquent\/Liftoff\/Exception\/LaunchException.html"," < RuntimeException",
+                [["LaunchException","Eloquent\/Liftoff\/Exception\/LaunchException.html"," < Exception",
                 [        ]]        ]],["Launcher","Eloquent\/Liftoff\/Launcher.html","",
                 [        ]],["LauncherInterface","Eloquent\/Liftoff\/LauncherInterface.html","",
                 [        ]]        ]]        ]]        ]
