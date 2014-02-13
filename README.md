@@ -2,15 +2,15 @@
 
 *Open any file or URI using the default GUI application from within PHP.*
 
-[![Build Status]][Latest build]
-[![Test Coverage]][Test coverage report]
-[![Uses Semantic Versioning]][SemVer]
+[![The most recent stable version is 0.1.0][version-image]][Semantic versioning]
+[![Current build status image][build-image]][Current build status]
+[![Current coverage status image][coverage-image]][Current coverage status]
 
 ## Installation and documentation
 
-* Available as [Composer] package [eloquent/liftoff].
-* [Executable phar] available for download.
-* [API documentation] available.
+- Available as [Composer] package [eloquent/liftoff].
+- [Executable phar] available for download.
+- [API documentation] available.
 
 ## What is Liftoff?
 
@@ -55,14 +55,14 @@ application.
 
 <!-- References -->
 
-[API documentation]: http://lqnt.co/liftoff/artifacts/documentation/api/
-[Composer]: http://getcomposer.org/
-[eloquent/liftoff]: https://packagist.org/packages/eloquent/liftoff
 [Executable phar]: http://lqnt.co/liftoff/liftoff
 
-[Build Status]: https://api.travis-ci.org/eloquent/liftoff.png?branch=master
-[Latest build]: https://travis-ci.org/eloquent/liftoff
-[SemVer]: http://semver.org/
-[Test coverage report]: https://coveralls.io/r/eloquent/liftoff
-[Test Coverage]: https://coveralls.io/repos/eloquent/liftoff/badge.png?branch=master
-[Uses Semantic Versioning]: http://b.repl.ca/v1/semver-yes-brightgreen.png
+[API documentation]: http://lqnt.co/liftoff/artifacts/documentation/api/
+[Composer]: http://getcomposer.org/
+[build-image]: http://img.shields.io/travis/eloquent/liftoff/develop.svg "Current build status for the develop branch"
+[Current build status]: https://travis-ci.org/eloquent/liftoff
+[coverage-image]: http://img.shields.io/coveralls/eloquent/liftoff/develop.svg "Current test coverage for the develop branch"
+[Current coverage status]: https://coveralls.io/r/eloquent/liftoff
+[eloquent/liftoff]: https://packagist.org/packages/eloquent/liftoff
+[Semantic versioning]: http://semver.org/
+[version-image]: http://img.shields.io/:semver-0.1.0-yellow.svg "This project uses semantic versioning"

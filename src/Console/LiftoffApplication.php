@@ -3,10 +3,10 @@
 /*
  * This file is part of the Liftoff package.
  *
- * Copyright © 2013 Erin Millard
+ * Copyright © 2014 Erin Millard
  *
- * For the full copyright and license information, please view the LICENSE
- * file that was distributed with this source code.
+ * For the full copyright and license information, please view the LICENSE file
+ * that was distributed with this source code.
  */
 
 namespace Eloquent\Liftoff\Console;
@@ -21,10 +21,13 @@ use RuntimeException;
  */
 class LiftoffApplication
 {
+    /**
+     * The Liftoff version number.
+     */
     const VERSION = '0.1.0';
 
     /**
-     * Create a new Application instance.
+     * Create a new Liftoff application.
      *
      * @param LauncherInterface|null $launcher The launcher to use.
      * @param Isolator|null          $isolator The isolator to use.
@@ -54,8 +57,9 @@ class LiftoffApplication
     /**
      * Runs the Liftoff command line application.
      *
-     * @param array<string,mixed>|null $variables The server variables to use.
-     *     Defaults to $_SERVER.
+     * @param array<string,mixed>|null $variables The server variables to use. Defaults to $_SERVER.
+     *
+     * @throws RuntimeException If the arguments can not be determined, or are invalid.
      */
     public function execute(array $variables = null)
     {
@@ -86,27 +90,39 @@ class LiftoffApplication
     }
 
     /**
-     * @param array<string> $arguments
+     * Launch a file or URI in its default GUI application.
+     *
+     * @param array<integer,string> $arguments The command line arguments.
      */
     protected function executeLaunch(array $arguments)
     {
         $this->launcher()->launch($arguments[0], array_slice($arguments, 1));
     }
 
+    /**
+     * Display the usage information.
+     */
     protected function executeUsage()
     {
-        $this->isolator->echo('Usage: liftoff <target> [argument...]' . PHP_EOL);
-    }
-
-    protected function executeVersion()
-    {
-        $this->isolator->echo('Liftoff ' . static::VERSION . PHP_EOL);
+        $this->isolator()
+            ->echo('Usage: liftoff <target> [argument...]' . PHP_EOL);
     }
 
     /**
-     * @param array<string,mixed> $variables
+     * Display the version information.
+     */
+    protected function executeVersion()
+    {
+        $this->isolator()->echo('Liftoff ' . static::VERSION . PHP_EOL);
+    }
+
+    /**
+     * Parse the command line arguments from the supplied environment variables.
      *
-     * @return array<string>
+     * @param array<string,mixed> $variables The environment variables.
+     *
+     * @return array<integer,string> The parsed command line arguments.
+     * @throws RuntimeException      If the arguments can not be determined.
      */
     protected function arguments(array $variables)
     {
@@ -121,6 +137,16 @@ class LiftoffApplication
         array_shift($arguments);
 
         return $arguments;
+    }
+
+    /**
+     * Get the isolator.
+     *
+     * @return Isolator The isolator.
+     */
+    protected function isolator()
+    {
+        return $this->isolator;
     }
 
     private $launcher;
