@@ -1,3 +1,9 @@
+> # No longer maintained
+>
+> This package is no longer maintained. See [this statement] for more info.
+>
+> [this statement]: https://gist.github.com/ezzatron/713a548735febe3d76f8ca831bc895c0
+
 # Liftoff
 
 *Open any file or URI using the default GUI application from within PHP.*
